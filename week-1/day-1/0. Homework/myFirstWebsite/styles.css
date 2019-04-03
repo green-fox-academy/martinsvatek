@@ -1,0 +1,90 @@
+body {
+    background-image: url(assets/background.png);
+    margin: 0px;
+}
+
+p, h1, h2, h3 {
+    color: #333333;
+}
+
+h1, h2, h3 {
+    font-family: Russo One;
+}
+
+p, a {
+    font-family: Courier;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    font-size: 20px;
+    color: #ff0099;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+#navigation {
+    background-color: #333333;
+    padding: 0px 10% 0px 10%;
+    height: 60px;
+}
+
+#navigation img {
+    float: left;
+    margin: 5px 2% 5px 2%;
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+
+.menu {
+    float: right;
+    text-transform: uppercase;
+    margin: 20px 2% 20px 2%;
+}
+
+#header {
+    text-align: left;
+    padding: 20px 10% 20px 10%;
+}
+
+#header h2 {
+    color: #ff0099;
+}
+
+#header span {
+    font-weight: bold;
+}
+
+#separator {
+    text-align: center;
+    padding: 0px 10% 0px 10%;
+}
+
+#definitions {
+    text-align: left;
+    padding: 20px 10% 20px 10%;
+}
+
+#definitions h2 {
+    text-align: center;
+}
+
+#back-to-top {
+    text-align: right;
+    padding: 20px 10% 20px 10%;
+}

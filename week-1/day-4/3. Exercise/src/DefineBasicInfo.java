@@ -15,9 +15,11 @@ public class DefineBasicInfo {
         System.out.println("My name is " + myname);
         System.out.println("I am " + myage + " years old");
         System.out.println("My height is " + myheight);
-        if (married == true)
+
+        if (married == true) {
             System.out.println("And I am married");
-        else
+        } else {
             System.out.println("And I am happy");
+        }
     }
 }

@@ -14,7 +14,6 @@ import java.util.Scanner;
             System.out.println("Enter height");
             double height = myObj.nextDouble();
 
-            System.out.println("Volume: " + lenght * width * height);
-            System.out.println("Volume: " + lenght * width * height);
+            System.out.println("Volume: " + lenght * width * height + " and Surface area: " + 2 * ((lenght * width) + (width * height) + (height * lenght)));
         }
     }

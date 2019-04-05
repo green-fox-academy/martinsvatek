@@ -1,26 +1,19 @@
-public class Cuboid {
-    // Write a program that stores 3 sides of a cuboid as variables (doubles)
-    // The program should write the surface area and volume of the cuboid like:
-    //
-    // Surface Area: 600
-    // Volume: 1000
 
-    public class UserInput {
-        public static void main(String[] args) {
-            // Creates a scanner
-            Scanner scanner = new Scanner(System.in);
+import java.util.Scanner;
 
-            // The program stops and waits for user input and to press enter
-            String userInput1 = scanner.nextLine();
+    public class Cuboid {
+        public static void main(double[] args) {
+            Scanner myObj = new Scanner(System.in);
 
-            // It prints the whole line that was given by the user
-            System.out.println(userInput1);
+            System.out.println("Enter lenght");
+            double lenght = myObj.nextLine();
 
-            // The program stops and waits for user input that is an integer and to press enter
-            int userInput2 = scanner.nextInt();
+            System.out.println("Enter width");
+            double width = myObj.nextLine();
 
-            // It prints the integer
-            System.out.println(userInput2);
+            System.out.println("Enter height");
+            double height = myObj.nextLine();
+
+            System.out.println("Volume: " lenght * width * height);
         }
     }
-}

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a7a802f-3115-4ef0-a63d-4c1d9218d60a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnimalsAndLegs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AverageOfInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MileToKmConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OddEven.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OneTwoALot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrintBigger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ConditionalVariableMutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PartyIndicator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,12 +17,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/PrintBigger.java">
+        <entry file="file://$PROJECT_DIR$/src/ConditionalVariableMutation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="90">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -70,13 +66,15 @@
         <option value="$PROJECT_DIR$/src/OddEven.java" />
         <option value="$PROJECT_DIR$/src/PrintBigger.java" />
         <option value="$PROJECT_DIR$/src/OneTwoALot.java" />
+        <option value="$PROJECT_DIR$/src/PartyIndicator.java" />
+        <option value="$PROJECT_DIR$/src/ConditionalVariableMutation.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="770" />
-    <option name="width" value="1160" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="747" />
+    <option name="width" value="1180" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -84,7 +82,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -102,6 +99,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -129,14 +127,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.OneTwoALot">
-    <configuration name="AverageOfInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AverageOfInput" />
-      <module name="3. Exercise" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.PartyIndicator">
     <configuration name="HelloUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HelloUser" />
       <module name="3. Exercise" />
@@ -158,6 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PartyIndicator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PartyIndicator" />
+      <module name="3. Exercise" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PrintBigger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PrintBigger" />
       <module name="3. Exercise" />
@@ -166,19 +164,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AverageOfInput" />
       <item itemvalue="Application.HelloUser" />
       <item itemvalue="Application.OddEven" />
       <item itemvalue="Application.OneTwoALot" />
       <item itemvalue="Application.PrintBigger" />
+      <item itemvalue="Application.PartyIndicator" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PartyIndicator" />
         <item itemvalue="Application.OneTwoALot" />
         <item itemvalue="Application.PrintBigger" />
         <item itemvalue="Application.OddEven" />
         <item itemvalue="Application.HelloUser" />
-        <item itemvalue="Application.AverageOfInput" />
       </list>
     </recent_temporary>
   </component>
@@ -204,17 +202,18 @@
       <workItem from="1554470077359" duration="2962000" />
       <workItem from="1554473059349" duration="1521000" />
       <workItem from="1554474597709" duration="2982000" />
+      <workItem from="1554477741163" duration="1042000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30771000" />
+    <option name="totallyTimeSpent" value="31813000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="598" y="0" width="944" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19060403" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27375567" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -223,7 +222,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32152975" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3252149" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -394,10 +393,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PartyIndicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrintBigger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConditionalVariableMutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>

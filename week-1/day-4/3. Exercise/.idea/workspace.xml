@@ -2,31 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a7a802f-3115-4ef0-a63d-4c1d9218d60a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/3. Exercise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-4/Bmi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-4/CodingHours.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-4/Cuboid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-4/DefineBasicInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-4/FavoriteNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-4/HelloMe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-4/HelloOthers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-4/HelloUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-4/HumptyDumpty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-4/IntroduceYourself.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-4/SecondsInADay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-4/Swap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-4/TwoNumbers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-4/VariableMutation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bmi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bmi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CodingHours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CodingHours.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cuboid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cuboid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DefineBasicInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DefineBasicInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SecondsInADay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SecondsInADay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VariableMutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VariableMutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnimalsAndLegs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AverageOfInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MileToKmConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OddEven.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OneTwoALot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PrintBigger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,21 +21,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/HelloUser.java">
+        <entry file="file://$PROJECT_DIR$/src/PrintBigger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/VariableMutation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+            <state relative-caret-position="378">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -91,13 +64,19 @@
         <option value="$PROJECT_DIR$/src/SecondsInADay.java" />
         <option value="$PROJECT_DIR$/src/TwoNumbers.java" />
         <option value="$PROJECT_DIR$/src/VariableMutation.java" />
+        <option value="$PROJECT_DIR$/src/MileToKmConverter.java" />
+        <option value="$PROJECT_DIR$/src/AverageOfInput.java" />
+        <option value="$PROJECT_DIR$/src/AnimalsAndLegs.java" />
+        <option value="$PROJECT_DIR$/src/OddEven.java" />
+        <option value="$PROJECT_DIR$/src/PrintBigger.java" />
+        <option value="$PROJECT_DIR$/src/OneTwoALot.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="771" />
-    <option name="width" value="1158" />
-    <option name="height" value="1039" />
+    <option name="x" value="770" />
+    <option name="width" value="1160" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -105,6 +84,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,7 +101,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -150,9 +129,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HelloUser">
-    <configuration name="HelloMe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HelloMe" />
+  <component name="RunManager" selected="Application.OneTwoALot">
+    <configuration name="AverageOfInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AverageOfInput" />
       <module name="3. Exercise" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,41 +144,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecondsInADay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SecondsInADay" />
+    <configuration name="OddEven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OddEven" />
       <module name="3. Exercise" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TwoNumbers" />
+    <configuration name="OneTwoALot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OneTwoALot" />
       <module name="3. Exercise" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VariableMutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="VariableMutation" />
+    <configuration name="PrintBigger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrintBigger" />
       <module name="3. Exercise" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SecondsInADay" />
-      <item itemvalue="Application.HelloMe" />
+      <item itemvalue="Application.AverageOfInput" />
       <item itemvalue="Application.HelloUser" />
-      <item itemvalue="Application.TwoNumbers" />
-      <item itemvalue="Application.VariableMutation" />
+      <item itemvalue="Application.OddEven" />
+      <item itemvalue="Application.OneTwoALot" />
+      <item itemvalue="Application.PrintBigger" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OneTwoALot" />
+        <item itemvalue="Application.PrintBigger" />
+        <item itemvalue="Application.OddEven" />
         <item itemvalue="Application.HelloUser" />
-        <item itemvalue="Application.VariableMutation" />
-        <item itemvalue="Application.TwoNumbers" />
-        <item itemvalue="Application.HelloMe" />
-        <item itemvalue="Application.SecondsInADay" />
+        <item itemvalue="Application.AverageOfInput" />
       </list>
     </recent_temporary>
   </component>
@@ -223,17 +202,19 @@
       <workItem from="1554458108236" duration="99000" />
       <workItem from="1554458261075" duration="7115000" />
       <workItem from="1554470077359" duration="2962000" />
+      <workItem from="1554473059349" duration="1521000" />
+      <workItem from="1554474597709" duration="2982000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26268000" />
+    <option name="totallyTimeSpent" value="30771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1852349" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19060403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -252,7 +233,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50402683" side_tool="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4966443" weight="0.3323782" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4966443" weight="0.33144477" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -284,13 +265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FavoriteNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DefineBasicInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -302,34 +276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cuboid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HelloMe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HelloOthers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HumptyDumpty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -354,6 +300,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/VariableMutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cuboid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MileToKmConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HelloMe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FavoriteNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HelloOthers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HelloUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AnimalsAndLegs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HumptyDumpty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/IntroduceYourself.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -361,17 +373,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/VariableMutation.java">
+    <entry file="file://$PROJECT_DIR$/src/AverageOfInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        <state relative-caret-position="334">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HelloUser.java">
+    <entry file="file://$PROJECT_DIR$/src/OddEven.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="126">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OneTwoALot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrintBigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

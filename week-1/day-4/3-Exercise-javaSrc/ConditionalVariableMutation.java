@@ -1,5 +1,6 @@
 public class ConditionalVariableMutation {
     public static void main(String[] args) {
+
         double a = 25;
         int out = 0;
 
@@ -31,6 +32,7 @@ public class ConditionalVariableMutation {
         int c = 123;
         int credits = 100;
         boolean isBonus = true;
+
         // if credits are at least 50,
         // and isBonus is false decrement c by 2
         // if credits are smaller than 50,
@@ -48,6 +50,7 @@ public class ConditionalVariableMutation {
         int d = 8;
         int time = 120;
         String out3 = "";
+
         // if d is dividable by 4
         // and time is not more than 200
         // set out3 to "check"

@@ -4,8 +4,8 @@ public class IWontCheatOnTheExams {
 
     public static void main(String[] args) {
 
-        for (int a = 0; a < 100; a++) {
-            int b = a + 1;
+        for (int a = 1; a < 101; a++) {
+            int b = a;
             System.out.println(b + ": I won't cheat on the exam!");
         }
     }

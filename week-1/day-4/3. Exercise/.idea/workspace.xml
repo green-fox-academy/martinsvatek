@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a7a802f-3115-4ef0-a63d-4c1d9218d60a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ConditionalVariableMutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConditionalVariableMutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IWontCheatOnTheExams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ConditionalVariableMutation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1152">
-              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="-410">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/IWontCheatOnTheExams.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="55" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -66,6 +76,7 @@
         <option value="$PROJECT_DIR$/src/OneTwoALot.java" />
         <option value="$PROJECT_DIR$/src/PartyIndicator.java" />
         <option value="$PROJECT_DIR$/src/ConditionalVariableMutation.java" />
+        <option value="$PROJECT_DIR$/src/IWontCheatOnTheExams.java" />
       </list>
     </option>
   </component>
@@ -126,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConditionalVariableMutation">
+  <component name="RunManager" selected="Application.IWontCheatOnTheExams">
     <configuration name="ConditionalVariableMutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ConditionalVariableMutation" />
       <module name="3. Exercise" />
@@ -134,8 +145,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OddEven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OddEven" />
+    <configuration name="IWontCheatOnTheExams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IWontCheatOnTheExams" />
       <module name="3. Exercise" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,19 +174,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.OddEven" />
       <item itemvalue="Application.OneTwoALot" />
       <item itemvalue="Application.PrintBigger" />
       <item itemvalue="Application.PartyIndicator" />
       <item itemvalue="Application.ConditionalVariableMutation" />
+      <item itemvalue="Application.IWontCheatOnTheExams" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IWontCheatOnTheExams" />
         <item itemvalue="Application.ConditionalVariableMutation" />
         <item itemvalue="Application.PartyIndicator" />
         <item itemvalue="Application.OneTwoALot" />
         <item itemvalue="Application.PrintBigger" />
-        <item itemvalue="Application.OddEven" />
       </list>
     </recent_temporary>
   </component>
@@ -201,12 +212,12 @@
       <workItem from="1554470077359" duration="2962000" />
       <workItem from="1554473059349" duration="1521000" />
       <workItem from="1554474597709" duration="2982000" />
-      <workItem from="1554477741163" duration="5585000" />
+      <workItem from="1554477741163" duration="6108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36356000" />
+    <option name="totallyTimeSpent" value="36879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -408,8 +419,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ConditionalVariableMutation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="-410">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWontCheatOnTheExams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="55" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="55" />
         </state>
       </provider>
     </entry>

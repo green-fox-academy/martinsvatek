@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a7a802f-3115-4ef0-a63d-4c1d9218d60a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PrintEven.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IWontCheatOnTheExams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IWontCheatOnTheExams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/3. Exercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/src/PrintEven.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="48" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="48" />
+              <caret line="2" column="56" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -214,12 +216,12 @@
       <workItem from="1554470077359" duration="2962000" />
       <workItem from="1554473059349" duration="1521000" />
       <workItem from="1554474597709" duration="2982000" />
-      <workItem from="1554477741163" duration="8359000" />
+      <workItem from="1554477741163" duration="9046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39130000" />
+    <option name="totallyTimeSpent" value="39817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -436,7 +438,7 @@
     <entry file="file://$PROJECT_DIR$/src/PrintEven.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="48" />
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="56" />
         </state>
       </provider>
     </entry>

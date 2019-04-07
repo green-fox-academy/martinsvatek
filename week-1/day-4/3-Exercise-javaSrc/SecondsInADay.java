@@ -17,4 +17,3 @@ public class SecondsInADay {
         System.out.println(amountOfSecondPerDay - amountOfCurrentSecondsPerDay + " Seconds are remaining");
     }
 }
-

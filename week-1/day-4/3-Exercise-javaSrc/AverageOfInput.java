@@ -31,4 +31,3 @@ public class AverageOfInput {
         System.out.println("Sum: " + sum + ", Average:" + avg);
     }
 }
-

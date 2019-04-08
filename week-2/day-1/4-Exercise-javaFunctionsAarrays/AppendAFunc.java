@@ -16,6 +16,7 @@ public class AppendAFunc {
     }
 
     public static void appendAFunc(String typo) {
+
         String character = "a";
         System.out.println(typo + character);
     }

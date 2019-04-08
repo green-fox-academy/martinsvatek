@@ -26,7 +26,10 @@ public class DiagonalMatrix {
             for (int j = 0; j < matrix[0].length; j++) {
                 if (j == i) {
                     matrix[i][j] = 1;
+                } else {
+                    matrix[i][j] = 0;
                 }
+
                 System.out.print(matrix[i][j]);
             }
             System.out.println();

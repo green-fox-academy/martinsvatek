@@ -13,7 +13,7 @@ public class Doubling {
     public static void doubling(int baseNum) {
 
         int doubleNum = baseNum * 2;
-        
+
         System.out.println(doubleNum);
     }
 }

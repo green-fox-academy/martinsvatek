@@ -10,21 +10,21 @@ public class ParametricAverage {
     // Sum: 22, Average: 4.4
 
     public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);
 
-        int b;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter how many numbers do you want to count:");
+        int numbersCount = scanner.nextInt();
+        int average = 0;
         int sum = 0;
-        float average = 0;
-        int askedNumbers = 4;
 
-        for (int i = 0; i < askedNumbers; i++) {
+        for (int i = 0; i < numbersCount; i++) {
+            System.out.println("Enter whole number:");
+            int number = scanner.nextInt();
 
-            System.out.println("Enter "+ (i+1) +". Number: ");
-            b = myObj.nextInt();
-            sum += b;
+            sum += number;
+            average = sum / numbersCount;
         }
-
-        average= (float)sum/askedNumbers;
-        System.out.println("Sum: "+ sum + " / Average:"+ average);
+        System.out.println("Sum: " + sum + ", Average: " + average);
     }
 }

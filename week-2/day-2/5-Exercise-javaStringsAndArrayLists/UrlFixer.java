@@ -4,12 +4,12 @@
 
 public class UrlFixer {
 
-    public static void main(String... args){
+    public static void main(String... args) {
 
         String url = "https//www.reddit.com/r/nevertellmethebots";
         String urlReplaced = url.replace("bots", "odds");
-        String urlSeparated = urlReplaced.substring(5);
-        String fixedUrl = "https:" + urlSeparated;
+        String urlSeparated = urlReplaced.substring(7);
+        String fixedUrl = "https://" + urlSeparated;
 
         System.out.println(fixedUrl);
     }

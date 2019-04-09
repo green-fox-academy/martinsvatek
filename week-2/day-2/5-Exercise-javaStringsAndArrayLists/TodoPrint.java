@@ -14,13 +14,12 @@ import java.util.ArrayList;
 public class TodoPrint {
 
     public static void main(String... args) {
-        String todoText = "My todo:";
-        String firstTodo = " - Buy milk";
-        String secondTodo = " - Download games";
+        String todoText = "My todo:\n";
+        String firstTodo = " - Buy milk\n";
+        String secondTodo = " - Download games\n";
         String underSecondWithIndent = "\t - Diablo";
 
-        String todo = "";
-        todo = todo.join("\n", todoText, firstTodo, secondTodo, underSecondWithIndent);
+        String todo = todoText + firstTodo + secondTodo + underSecondWithIndent;
 
         System.out.println(todo);
     }

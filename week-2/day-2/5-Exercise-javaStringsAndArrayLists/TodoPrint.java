@@ -13,7 +13,8 @@ import java.util.ArrayList;
 
 public class TodoPrint {
 
-    public static void main(String... args) {
+    public static void main(String[] args) {
+
         String todoText = "My todo:\n";
         String firstTodo = " - Buy milk\n";
         String secondTodo = " - Download games\n";

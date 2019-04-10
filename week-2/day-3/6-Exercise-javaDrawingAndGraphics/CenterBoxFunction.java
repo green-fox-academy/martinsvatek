@@ -2,24 +2,32 @@ import javax.swing.*;
 import java.awt.*;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class HorizontalLines {
+public class CenterBoxFunction {
 
-    public static void mainDraw(Graphics graphics) {
+    public static void mainDraw(Graphics graphics){
 
-        for (int i = 0; i < 90; i +=30) {
-            Line(20, 20 + i, graphics);
+        int numberOfSquares = 3;
+
+        for (int i = 0; i < numberOfSquares; i++) {
+
+            int size = (int)(Math.random() * WIDTH);
+            squareMaker(graphics, size);
         }
     }
 
-    public static void Line(int x, int y, Graphics graphics) {
+    public static void squareMaker(Graphics graphics, int size) {
 
-        graphics.drawLine(x, y, x + 50, y);
+        int centerX = WIDTH/2;
+        int centerY = HEIGHT/2;
+
+        graphics.drawRect(centerX - (size / 2), centerY - (size / 2), size, size);
     }
 
-        // Create a line drawing function that takes 3 parameters:
-        // The x and y coordinates of the line's starting point and the graphics
-        // and draws a 50 long horizontal line from that point.
-        // Draw 3 lines with that function. Use loop for that.
+    // create a square drawing function that takes 2 parameter:
+    // the square size and the graphics
+    // and draws a square of that size to the center of the canvas.
+    // draw 3 squares with that function.
+    // avoid code duplication.
 
     // Don't touch the code below
 

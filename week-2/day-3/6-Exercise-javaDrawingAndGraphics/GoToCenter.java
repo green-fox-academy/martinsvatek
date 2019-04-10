@@ -6,20 +6,19 @@ public class GoToCenter {
 
     public static void mainDraw(Graphics graphics) {
 
-        for (int i = 0; i < 300; i += 100) {
-
-            Graphics2D graphics2 = (Graphics2D) graphics;
-            graphics2.setStroke(new BasicStroke(4));
-
-            graphics.setColor(Color.green);
-            graphics.drawLine(10 + i, 10, 160, 160);
+        for (int i = 0; i < 100; i++) {
+            drawToTheMiddle((int) (Math.random() * WIDTH), (int) (Math.random() * HEIGHT), graphics);
         }
+    }
+
+    public static void drawToTheMiddle (int x, int y, Graphics definition) {
+        definition.drawLine(x, y, WIDTH / 2, HEIGHT / 2);
+    }
 
         // Create a line drawing function that takes 3 parameters:
         // The x and y coordinates of the line's starting point and the graphics
         // and draws a line from that point to the center of the canvas.
         // Draw 3 lines with that function. Use loop for that.
-    }
 
     // Don't touch the code below
 

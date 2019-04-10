@@ -2,24 +2,32 @@ import javax.swing.*;
 import java.awt.*;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class HorizontalLines {
+public class PositionSquare {
 
     public static void mainDraw(Graphics graphics) {
 
-        for (int i = 0; i < 90; i +=30) {
-            Line(20, 20 + i, graphics);
+        int numberOfSquares = 3;
+        int size = 50;
+
+        for (int i = 0; i < numberOfSquares; i++) {
+
+            int x = 0;
+            int y = 0;
+
+            squareMaker(graphics,x + size * i, y + size * i, size);
         }
     }
 
-    public static void Line(int x, int y, Graphics graphics) {
+    public static void squareMaker(Graphics graphics, int x, int y, int size) {
 
-        graphics.drawLine(x, y, x + 50, y);
+        graphics.drawRect(x, y, size, size);
     }
 
-        // Create a line drawing function that takes 3 parameters:
-        // The x and y coordinates of the line's starting point and the graphics
-        // and draws a 50 long horizontal line from that point.
-        // Draw 3 lines with that function. Use loop for that.
+    // create a square drawing function that takes 3 parameters:
+    // the x and y coordinates of the square's top left corner and the graphics
+    // and draws a 50x50 square from that point.
+    // draw 3 squares with that function.
+    // avoid code duplication.
 
     // Don't touch the code below
 

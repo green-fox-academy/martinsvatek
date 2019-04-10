@@ -2,24 +2,15 @@ import javax.swing.*;
 import java.awt.*;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class HorizontalLines {
+public class CenteredSquare {
 
     public static void mainDraw(Graphics graphics) {
 
-        for (int i = 0; i < 90; i +=30) {
-            Line(20, 20 + i, graphics);
-        }
+        graphics.setColor(new Color(0, 255, 0));
+        graphics.drawRect(WIDTH / 2 - 5, HEIGHT / 2 - 5, 10, 10);
+
+        // Draw a green 10x10 square to the canvas' center.
     }
-
-    public static void Line(int x, int y, Graphics graphics) {
-
-        graphics.drawLine(x, y, x + 50, y);
-    }
-
-        // Create a line drawing function that takes 3 parameters:
-        // The x and y coordinates of the line's starting point and the graphics
-        // and draws a 50 long horizontal line from that point.
-        // Draw 3 lines with that function. Use loop for that.
 
     // Don't touch the code below
 

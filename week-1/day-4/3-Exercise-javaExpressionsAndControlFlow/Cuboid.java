@@ -1,19 +1,23 @@
 import java.util.Scanner;
 
 public class Cuboid {
+
     public static void main(String[] args) {
 
-        Scanner myObj = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter lenght");
-        double length = myObj.nextDouble();
+        double length = scanner.nextDouble();
 
         System.out.println("Enter width");
-        double width = myObj.nextDouble();
+        double width = scanner.nextDouble();
 
         System.out.println("Enter height");
-        double height = myObj.nextDouble();
+        double height = scanner.nextDouble();
 
-        System.out.println("Volume: " + length * width * height + " and Surface area: " + 2 * ((length * width) + (width * height) + (height * length)));
+        double volume = length * width * height;
+        double surface = 2 * ((length * width) + (width * height) + (height * length));
+
+        System.out.println("Volume: " + volume + " and Surface area: " + surface);
     }
 }

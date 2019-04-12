@@ -2,22 +2,13 @@ import java.util.Scanner;
 
 public class DrawPyramid {
 
-    // Write a program that reads a number from the standard input, then draws a
-    // pyramid like this:
-    //
-    //
-    //    *
-    //   ***
-    //  *****
-    // *******
-    //
-    // The pyramid should have as many lines as the number was
-
     public static void main(String[] args) {
 
-        Scanner myObj = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println("How many lines of pyramid do you want?");
-        int lines = myObj.nextInt();
+        int lines = scanner.nextInt();
+
         int increment = 1;
 
         //PYRAMID
@@ -43,3 +34,14 @@ public class DrawPyramid {
         }
     }
 }
+
+// Write a program that reads a number from the standard input, then draws a
+// pyramid like this:
+//
+//
+//    *
+//   ***
+//  *****
+// *******
+//
+// The pyramid should have as many lines as the number was

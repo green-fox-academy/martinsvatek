@@ -1,7 +1,6 @@
 public class HumptyDumpty {
-    public static void main(String[] args) {
 
-        // Modify this program to print Humpty Dumpty riddle correctly
+    public static void main(String[] args) {
 
         System.out.println("All the king's horses and all the king's men");
         System.out.println("Couldn't put Humpty together again.");
@@ -9,3 +8,5 @@ public class HumptyDumpty {
         System.out.println("Humpty Dumpty had a great fall.");
     }
 }
+
+// Modify this program to print Humpty Dumpty riddle correctly

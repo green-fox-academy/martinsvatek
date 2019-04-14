@@ -1,13 +1,3 @@
-// - Create (dynamically) a two dimensional array
-//   with the following matrix. Use a loop!
-//
-//   1 0 0 0
-//   0 1 0 0
-//   0 0 1 0
-//   0 0 0 1
-//
-// - Print this two dimensional array to the output
-
 import java.util.Scanner;
 
 public class DiagonalMatrix {
@@ -15,9 +5,11 @@ public class DiagonalMatrix {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Length A: ");
+
+        System.out.println("Side A: ");
         int sideA = scanner.nextInt();
-        System.out.println("Length B: ");
+
+        System.out.println("Side B: ");
         int sideB = scanner.nextInt();
 
         int[][] matrix = new int[sideA][sideB];
@@ -32,7 +24,18 @@ public class DiagonalMatrix {
 
                 System.out.print(matrix[i][j]);
             }
+
             System.out.println();
         }
     }
 }
+
+// - Create (dynamically) a two dimensional array
+//   with the following matrix. Use a loop!
+//
+//   1 0 0 0
+//   0 1 0 0
+//   0 0 1 0
+//   0 0 0 1
+//
+// - Print this two dimensional array to the output

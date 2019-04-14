@@ -2,18 +2,8 @@ import java.util.Scanner;
 
 public class DrawChessTable {
 
-    // Crate a program that draws a chess table like this
-    //
-    // % % % %
-    //  % % % %
-    // % % % %
-    //  % % % %
-    // % % % %
-    //  % % % %
-    // % % % %
-    //  % % % %
-
     public static void main(String[] args) {
+
         System.out.println("How many fields in row do you want?");
         Scanner myObj = new Scanner(System.in);
 
@@ -33,3 +23,14 @@ public class DrawChessTable {
         }
     }
 }
+
+// Crate a program that draws a chess table like this
+//
+// % % % %
+//  % % % %
+// % % % %
+//  % % % %
+// % % % %
+//  % % % %
+// % % % %
+//  % % % %

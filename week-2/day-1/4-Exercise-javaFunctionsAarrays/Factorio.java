@@ -1,16 +1,11 @@
-//  Create the usual class wrapper
-//  and main method on your own.
-
-// - Create a function called `factorio`
-//   that returns it's input's factorial
-
 public class Factorio {
+
     public static void main(String[] args) {
 
         int number = 4;
-        factorio(number);
+        int result = factorio(number);
 
-        System.out.println(factorio(number));
+        System.out.println(result);
     }
 
     public static int factorio(int number) {
@@ -23,3 +18,9 @@ public class Factorio {
         return (factorio);
     }
 }
+
+//  Create the usual class wrapper
+//  and main method on your own.
+
+// - Create a function called `factorio`
+//   that returns it's input's factorial

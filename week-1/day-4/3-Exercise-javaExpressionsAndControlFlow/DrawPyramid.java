@@ -11,25 +11,18 @@ public class DrawPyramid {
 
         int increment = 1;
 
-        //PYRAMID
-
         for (int a = 0; a < lines; a++) {
-
-            //NO SYMBOLS
-
             for (int b = lines; b > a; b--) {
+
                 System.out.print(" ");
             }
-
-            //SYMBOLS
-
             for (int b = 0; b < a + increment; b++) {
+
                 System.out.print("*");
             }
 
-            //LINES
-
             increment++;
+
             System.out.println();
         }
     }

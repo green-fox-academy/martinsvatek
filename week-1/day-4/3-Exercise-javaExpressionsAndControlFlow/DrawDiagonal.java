@@ -2,19 +2,8 @@ import java.util.Scanner;
 
 public class DrawDiagonal {
 
-    // Write a program that reads a number from the standard input, then draws a
-    // square like this:
-    //
-    //
-    // %%%%%
-    // %%  %
-    // % % %
-    // %  %%
-    // %%%%%
-    //
-    // The square should have as many lines as the number was
-
     public static void main(String[] args) {
+
         Scanner myObj = new Scanner(System.in);
 
         System.out.println("Please give me a number");
@@ -31,7 +20,9 @@ public class DrawDiagonal {
                 for (int j = 0; j < numberOfLines; j++) {
                     line += sign;
                 }
+
                 System.out.println(line);
+
             } else {
                 line = "";
                 numberOfColumn++;
@@ -42,6 +33,7 @@ public class DrawDiagonal {
                         line += emptysign;
                     }
                 }
+
                 System.out.println(line);
             }
         }

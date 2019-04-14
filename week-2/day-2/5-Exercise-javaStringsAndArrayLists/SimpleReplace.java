@@ -1,7 +1,3 @@
-// I would like to replace "dishwasher" with "galaxy" in this example, but it has a problem.
-// Please fix it for me!
-// Expected output: In a galaxy far far away
-
 public class SimpleReplace {
 
     public static void main(String[] args) {
@@ -12,3 +8,7 @@ public class SimpleReplace {
         System.out.println(replaced);
     }
 }
+
+// I would like to replace "dishwasher" with "galaxy" in this example, but it has a problem.
+// Please fix it for me!
+// Expected output: In a galaxy far far away

@@ -10,7 +10,7 @@ public class DrawTriangle {
         int number = scanner.nextInt();
 
         for (int a = 0; a < number; a++) {
-            for (int b = 0; b <= a; b++) {
+            for (int b = 0; b < a + 1; b++) {
 
                 System.out.print("*");
             }

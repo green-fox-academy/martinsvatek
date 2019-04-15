@@ -19,7 +19,7 @@ public class DivideByZero {
 
             System.out.println(result);
 
-        } catch (ArithmeticException e) {
+        } catch (ArithmeticException e) {   //will catch errors
 
             System.out.println("Fail! Dont be stupid and use different number!");
         }

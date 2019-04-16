@@ -14,4 +14,11 @@ public class BlogPost {
         this.text = text;
         this.publicationDate = publicationDate;
     }
+
+    public void print() {
+        System.out.println("Autor: " + this.authorName);
+        System.out.println("Title: " + this.title);
+        System.out.println("Text:: " + this.text);
+        System.out.println("Publication date: " + this.publicationDate);
+    }
 }

@@ -11,6 +11,18 @@ public class TimeSetting {
         minute = ((m >= 0 && m < 60) ? m : 0);
         second = ((s >= 0 && s < 60) ? s : 0);
     }
+    // when constructor has the same name as a class means that this constructor is called with object of class in main
+    public TimeSetting(int hour, int minute, int second) { // when you want to set time in main
+        this.hour = hour;
+        this.minute = minute;
+        this.second = second;
+    }
+
+    public TimeSetting() { // when you want to set it here
+        this.hour = 4;
+        this.minute = 5;
+        this.second = 6;
+    }
 
     public String setToMilitaryTimeFormat() {
         return String.format("%02d:%02d:%02d", hour, minute, second); // Output of integer values in 2 or more digits, the first being zero if number less than or equal to 9

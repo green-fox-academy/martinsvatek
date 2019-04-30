@@ -1,4 +1,4 @@
-package StaticVariable;
+package staticVariable;
 
 public class Data {
 

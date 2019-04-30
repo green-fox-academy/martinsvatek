@@ -1,4 +1,4 @@
-package FinalInstanceVariable;
+package finalInstanceVariable;
 
 public class Data {
 

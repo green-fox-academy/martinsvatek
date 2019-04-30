@@ -1,4 +1,4 @@
-package TimeToString;
+package timeToString;
 
 public class Time {
 

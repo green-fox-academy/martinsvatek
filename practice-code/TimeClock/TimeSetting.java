@@ -1,4 +1,4 @@
-package TimeClock;
+package timeClock;
 
 public class TimeSetting {
 

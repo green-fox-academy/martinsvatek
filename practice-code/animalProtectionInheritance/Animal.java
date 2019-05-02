@@ -2,8 +2,9 @@ package animalProtectionInheritance;
 
 import java.util.Random;
 
-public abstract class Animal {
+public class Animal {
     private String name;
+    private String ownerName;
     private boolean isHealthy;
     private int healCost;
 
@@ -26,13 +27,27 @@ public abstract class Animal {
         return false;
     }
 
-    public void randomHealCost() {
+    public void setHealCost() {
         Random healing = new Random();
         healCost = startingValue + healing.nextInt(randomNumber);
+    }
+
+    public boolean getIsHealthy() {
+        return isHealthy;
+    }
+
+    public int getHealCost() {
+        return healCost;
+    }
+
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
     }
 
     public String toString() {
         return (isHealthy == false ? name + " is not healthy (" + healCost + " €), and not adoptable"
                 : name + " is healthy, and adoptable");
     }
+
+
 }

@@ -6,7 +6,7 @@ public class Time {
     private int month;
     private int year;
 
-    public Time(int day, int month, int year) { // this allows us to define a date in our Main class
+    public Time(int day, int month, int year) { // this allows us to define a date in our MainForTest class
 
         this.day = day;
         this.month = month;

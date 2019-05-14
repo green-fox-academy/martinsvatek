@@ -9,12 +9,14 @@ public class UppercaseCharacters {
         System.out.println("Enter your sentence:");
         String sentence = scanner.nextLine();
 
+        // First solution
+
      /*   String upperCaseCharacters = sentence.chars()
                 .filter(Character::isUpperCase)
                 .mapToObj(letter -> Character.toString((char)letter))
                 .collect(Collectors.joining()); */
 
-        //method2 of exercise 6
+        // The most clear solution
 
         List<Character> upperCaseCharacters = sentence.chars()
                 .filter(letter -> Character.isUpperCase(letter))
@@ -22,7 +24,6 @@ public class UppercaseCharacters {
                 .collect(Collectors.toList());
 
         System.out.println("Upper is: " + upperCaseCharacters);
-
     }
 }
 

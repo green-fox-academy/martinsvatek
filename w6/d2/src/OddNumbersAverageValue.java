@@ -18,7 +18,7 @@ public class OddNumbersAverageValue {
 
         // Just logic solution
 
-/*      List<Integer> oddNumbers = numbers.stream()
+        /* List<Integer> oddNumbers = numbers.stream()
                 .filter(x -> x % 2 != 0)
                 .collect(Collectors.toList());
 

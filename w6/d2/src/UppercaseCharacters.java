@@ -11,7 +11,7 @@ public class UppercaseCharacters {
 
         // First solution
 
-     /*   String upperCaseCharacters = sentence.chars()
+        /* String upperCaseCharacters = sentence.chars()
                 .filter(Character::isUpperCase)
                 .mapToObj(letter -> Character.toString((char)letter))
                 .collect(Collectors.joining()); */

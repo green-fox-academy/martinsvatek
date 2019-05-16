@@ -12,7 +12,7 @@ table {
     background: white;
     margin: 10px 15%;
     padding: 30px;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 10px slategrey;
     width: 70%;
     border-collapse: collapse;
 }

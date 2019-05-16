@@ -1,0 +1,45 @@
+html {
+
+}
+
+body {
+    margin: 0 auto;
+    background: #3e94ec;
+    font-family: 'Montserrat', sans-serif;
+}
+
+table {
+    background: white;
+    margin: 10px 15%;
+    padding: 30px;
+    box-shadow: 0 0 10px grey;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+th {
+    background: black;
+    color: #ebebeb;
+    margin: 0px;
+    padding: 20px 20px;
+    border-bottom: 4px solid #9ea7af;
+    width: 40%;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 100;
+}
+
+td {
+    color: dimgray;
+    margin: 0px;
+    padding: 20px 20px;
+    border: 2px solid #cccdd6;
+    width: 40%;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 100;
+}
+
+tr:nth-child(odd) {
+    background: #ebebeb;
+}

@@ -32,35 +32,35 @@ public class WebShop {
         return shopItemsList;
     }
 
-    public List<ShopItem> onlyAvailableItemList() {
+    public List<ShopItem> getOnlyAvailableItemList() {
         return shopItemsList.stream()
                 .filter(shopItem -> shopItem.getQuantityOfStock() > 0)
                 .collect(Collectors.toList());
     }
 
-    public List<ShopItem> sortedByCheapestItemList() {
+    public List<ShopItem> sortByCheapestItemList() {
         return shopItemsList.stream()
                 .sorted(Comparator.comparing(ShopItem::getPrice))
                 .collect(Collectors.toList());
     }
 
-    public List<ShopItem> sortedByContainingWordItemList(String word) {
+    public List<ShopItem> sortByContainingWordItemList(String word) {
         return shopItemsList.stream()
                 .filter(shopItem -> shopItem.getName().contains(word) || shopItem.getDescription().contains(word))
                 .collect(Collectors.toList());
     }
 
-    public double averageStockValue() {
+    public double getAverageStockValue() {
         return shopItemsList.stream()
                 .map(shopItem -> shopItem.getQuantityOfStock())
                 .collect(Collectors.averagingDouble(Integer::intValue));
     }
 
-    public void mostExpensiveAvailableItem() {
+    public String getMostExpensiveAvailableItem() {
         return shopItemsList.stream()
                 .filter(shopItem -> shopItem.getQuantityOfStock() > 0)
-                .max( Comparator.comparing(ShopItem::getPrice)).get()
-                .collect(Collectors.toList());
-
+                .max(Comparator.comparing(ShopItem::getPrice))
+                .map(shopItem -> shopItem.getName())
+                .get();
     }
 }

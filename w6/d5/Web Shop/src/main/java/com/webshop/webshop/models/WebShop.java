@@ -1,5 +1,6 @@
 package com.webshop.webshop.models;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -13,6 +14,8 @@ public class WebShop {
     }
 
     public void initializeList() {
+        this.shopItemsList = new ArrayList<>();
+
         ShopItem runningShoes = new ShopItem("Running shoes", "Nike running shoes for everyday sport", 1000, 5);
         ShopItem printer = new ShopItem("Printer", "Some HP printer that will print pages", 3000, 2);
         ShopItem cocaCola = new ShopItem("Coca cola", "0.5 standard coke", 25, 0);
@@ -24,8 +27,6 @@ public class WebShop {
         shopItemsList.add(cocaCola);
         shopItemsList.add(wokin);
         shopItemsList.add(tShirt);
-
-        this.shopItemsList = shopItemsList;
     }
 
     public List<ShopItem> getShopItemsList() {

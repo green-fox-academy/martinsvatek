@@ -1,48 +1,63 @@
 package com.webshop.webshop.models;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class WebShop {
 
-    private List<ShopItem> shopItemList;
+    private List<ShopItem> shopItemsList;
 
     public WebShop() {
-        shopItemList = new ArrayList<>();
+        initializeList();
     }
 
-    public List<ShopItem> getShopItemList() {
-        return shopItemList;
+    public void initializeList() {
+        ShopItem runningShoes = new ShopItem("Running shoes", "Nike running shoes for everyday sport", 1000, 5);
+        ShopItem printer = new ShopItem("Printer", "Some HP printer that will print pages", 3000, 2);
+        ShopItem cocaCola = new ShopItem("Coca cola", "0.5 standard coke", 25, 0);
+        ShopItem wokin = new ShopItem("Wokin", "Chicken with fried rice and WOKIN suace", 119, 100);
+        ShopItem tShirt = new ShopItem("Tshirt", "Blue with corgi on a bike", 300, 1);
+
+        shopItemsList.add(runningShoes);
+        shopItemsList.add(printer);
+        shopItemsList.add(cocaCola);
+        shopItemsList.add(wokin);
+        shopItemsList.add(tShirt);
+
+        this.shopItemsList = shopItemsList;
+    }
+
+    public List<ShopItem> getShopItemsList() {
+        return shopItemsList;
     }
 
     public List<ShopItem> onlyAvailableItemList() {
-        return shopItemList.stream()
+        return shopItemsList.stream()
                 .filter(shopItem -> shopItem.getQuantityOfStock() > 0)
                 .collect(Collectors.toList());
     }
 
     public List<ShopItem> sortedByCheapestItemList() {
-        return shopItemList.stream()
+        return shopItemsList.stream()
                 .sorted(Comparator.comparing(ShopItem::getPrice))
                 .collect(Collectors.toList());
     }
 
     public List<ShopItem> sortedByContainingWordItemList(String word) {
-        return shopItemList.stream()
+        return shopItemsList.stream()
                 .filter(shopItem -> shopItem.getName().contains(word) || shopItem.getDescription().contains(word))
                 .collect(Collectors.toList());
     }
 
-    public double averageStockValue(double average) {
-        return average = shopItemList.stream()
+    public double averageStockValue() {
+        return shopItemsList.stream()
                 .map(shopItem -> shopItem.getQuantityOfStock())
-
+                .collect(Collectors.averagingDouble(Integer::intValue));
     }
 
     public void mostExpensiveAvailableItem() {
-        return shopItemList.stream()
+        return shopItemsList.stream()
                 .filter(shopItem -> shopItem.getQuantityOfStock() > 0)
                 .max( Comparator.comparing(ShopItem::getPrice)).get()
                 .collect(Collectors.toList());

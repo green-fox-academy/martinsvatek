@@ -48,7 +48,14 @@ public class WebShop {
     public List<ShopItem> sortByContainingNikeItemList() {
         return shopItemsList.stream()
                 .filter(shopItem -> shopItem.getName().toLowerCase().contains("nike")
-                        || shopItem.getDescription().toLowerCase().contains("Nike"))
+                        || shopItem.getDescription().toLowerCase().contains("nike"))
+                .collect(Collectors.toList());
+    }
+
+    public List<ShopItem> sortByContainingWordItemList(String word) {
+        return shopItemsList.stream()
+                .filter(shopItem -> shopItem.getName().toLowerCase().contains(word)
+                        || shopItem.getDescription().toLowerCase().contains(word))
                 .collect(Collectors.toList());
     }
 
@@ -64,11 +71,5 @@ public class WebShop {
                 .max(Comparator.comparing(ShopItem::getPrice))
                 .map(shopItem -> shopItem.getName())
                 .get();
-    }
-
-    public List<ShopItem> sortByContainingWordItemList(String word) {
-        return shopItemsList.stream()
-                .filter(shopItem -> shopItem.getName().contains(word) || shopItem.getDescription().contains(word))
-                .collect(Collectors.toList());
     }
 }

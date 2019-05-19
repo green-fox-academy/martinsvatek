@@ -9,53 +9,47 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class WebShopController {
 
-    WebShop myStore = new WebShop();
+    WebShop store = new WebShop();
 
-    @RequestMapping(value = "")
+    @RequestMapping(value = "/store")
     public String basicWebShopWithoutAnything(Model model) {
-        model.addAttribute("items", myStore.getShopItemsList());
+        model.addAttribute("items", store.getShopItemsList());
         return "index";
     }
 
-    @RequestMapping(value = "/web-shop")
-    public String basicWebShop(Model model) {
-        model.addAttribute("items", myStore.getShopItemsList());
-        return "index";
-    }
-
-    @RequestMapping(value = "/only-available")
+    @RequestMapping(value = "/store/only-available")
     public String onlyAvailable(Model model) {
-        model.addAttribute("items", myStore.getOnlyAvailableItemList());
+        model.addAttribute("items", store.getOnlyAvailableItemList());
         return "index";
     }
 
-    @RequestMapping(value = "/cheapest-first")
+    @RequestMapping(value = "/store/cheapest-first")
     public String sortFromCheapest(Model model) {
-        model.addAttribute("items", myStore.sortByCheapestItemList());
+        model.addAttribute("items", store.sortByCheapestItemList());
         return "index";
     }
 
-    @RequestMapping(value = "/contains-nike")
+    @RequestMapping(value = "/store/contains-nike")
     public String displayContainsNike(Model model) {
-        model.addAttribute("item", myStore.sortByContainingNikeItemList());
+        model.addAttribute("item", store.sortByContainingNikeItemList());
         return "index";
     }
 
-    @RequestMapping(value = "/average-stock")
+    @RequestMapping(value = "/store/average-stock")
     public String displayAverageStock(Model model) {
-        model.addAttribute("average", myStore.getAverageStockValue());
+        model.addAttribute("average", store.getAverageStockValue());
         return "index";
     }
 
-    @RequestMapping(value = "/most-expensive")
+    @RequestMapping(value = "/store/most-expensive")
     public String displayNameOfMostExpensiveItem(Model model) {
-        model.addAttribute("name", myStore.getMostExpensiveAvailableItem());
+        model.addAttribute("name", store.getMostExpensiveAvailableItem());
         return "index";
     }
 
-    @RequestMapping(value = "/search")
+    @RequestMapping(value = "/store/search")
     public String displaySearch(Model model,@RequestParam String word) {
-        model.addAttribute("items", myStore.sortByContainingWordItemList(word));
+        model.addAttribute("items", store.sortByContainingWordItemList(word));
         return "index";
     }
 }

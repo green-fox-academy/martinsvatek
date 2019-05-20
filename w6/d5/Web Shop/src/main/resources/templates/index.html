@@ -27,20 +27,26 @@
 
     <table class="table">
         <thead>
-        <tr>
-            <td>Name</td>
-            <td>Description</td>
-            <td>Price</td>
-            <td>Quantity of Stock</td>
-        </tr>
+            <tr>
+                <td>Name</td>
+                <td>Description</td>
+                <td>Price</td>
+                <td>Quantity of Stock</td>
+            </tr>
         </thead>
         <tbody>
-            <tr th:each="item : ${item}">
-            <td th:text="${item.getName()}"></td>
-            <td th:text="${item.getDescription()}"></td>
-            <td th:text="${item.getPrice()()}"></td>
-            <td th:text="${item.getQuantityOfStock()}"></td>
-        </tr>
+            <tr th:each="item : ${items}">
+                <td th:text="${item.getName()}"></td>
+                <td th:text="${item.getDescription()}"></td>
+                <td th:text="${item.getPrice()}"></td>
+                <td th:text="${item.getQuantityOfStock()}"></td>
+            </tr>
+            <tr>
+                <td th:if= "${average != null}" th:text="${average}"></td>
+            </tr>
+            <tr>
+                <td th:if= "${expensive != null}" th:text="${expensive}"></td>
+            </tr>
         </tbody>
     </table>
 </body>

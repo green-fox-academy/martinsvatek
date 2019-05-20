@@ -31,7 +31,7 @@ public class WebShopController {
 
     @RequestMapping(value = "/store/contains-nike")
     public String displayContainsNike(Model model) {
-        model.addAttribute("item", store.sortByContainingNikeItemList());
+        model.addAttribute("items", store.sortByContainingNikeItemList());
         return "index";
     }
 
@@ -43,7 +43,7 @@ public class WebShopController {
 
     @RequestMapping(value = "/store/most-expensive")
     public String displayNameOfMostExpensiveItem(Model model) {
-        model.addAttribute("name", store.getMostExpensiveAvailableItem());
+        model.addAttribute("expensive", store.getMostExpensiveAvailableItem());
         return "index";
     }
 

@@ -15,10 +15,9 @@
             <th>Balance</th>
             <th>Animal Type</th>
         </tr>
-        <tr th:object="${account}"> // atribute name
-            <td th:text="*{name}"></td> // variable
-            <td th:text="*{balance}"></td> // variable
-            <td th:text="*{animalType}"></td> // variable
+            <td th:text="${account.getName()}"></td> <!--atribute name + variable-->
+            <td th:text="${account.getBalanceString()}"</td> <!--atribute name + variable-->
+            <td th:text="${account.getAnimalType()}"></td> <!--atribute name + variable-->
         </tr>
     </table>
 </body>

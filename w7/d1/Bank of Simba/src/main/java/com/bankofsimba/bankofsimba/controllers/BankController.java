@@ -24,7 +24,7 @@ public class BankController {
         return "index";
     }
 
-    @RequestMapping(path = "/html-eception", method = RequestMethod.GET)
+    @RequestMapping(path = "/html-exception", method = RequestMethod.GET)
     public String htmlException (Model model) {
         model.addAttribute("myText", myText);
         return "htmlexception";

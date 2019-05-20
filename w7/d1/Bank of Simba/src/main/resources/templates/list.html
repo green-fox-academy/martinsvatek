@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Bank of Simba</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Balance</th>
+            <th>Animal Type</th>
+        <tr th:each="item : ${accountList}">
+            <td th:text="${item.getName()}"></td> <!--atribute name + variable-->
+            <td th:text="${item.getBalanceString()}"></td> <!--atribute name + variable-->
+            <td th:text="${item.getAnimalType()}"></td> <!--atribute name + variable-->
+        </tr>
+    </table>
+</body>
+</html>

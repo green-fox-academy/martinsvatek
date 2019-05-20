@@ -12,7 +12,6 @@ public class BankAccount {
     DecimalFormat decimalFormat = new DecimalFormat("#.00");
     private String balanceString;
 
-
     public BankAccount(String name, double balance, String animalType) {
         this.name = name;
         this.balanceString = decimalFormat.format(balance);

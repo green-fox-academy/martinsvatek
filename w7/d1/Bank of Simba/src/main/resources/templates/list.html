@@ -11,10 +11,12 @@
 <body>
     <table>
         <tr>
+            <th>Index</th>
             <th>Name</th>
             <th>Balance</th>
             <th>Animal Type</th>
         <tr th:each="item : ${accountList}">
+            <td th:text="${itemStat.index}"></td>
             <td th:text="${item.getName()}"></td> <!--atribute name + variable-->
             <td th:text="${item.getBalanceString()}"></td> <!--atribute name + variable-->
             <td th:text="${item.getAnimalType()}"></td> <!--atribute name + variable-->

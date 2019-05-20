@@ -9,6 +9,17 @@
 </head>
 
 <body>
-
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Balance</th>
+            <th>Animal Type</th>
+        </tr>
+        <tr th:object="${account}">
+            <td th:text="*{name}"></td>
+            <td th:text="*{balance}"></td>
+            <td th:text="*{animalType}"></td>
+        </tr>
+    </table>
 </body>
 </html>

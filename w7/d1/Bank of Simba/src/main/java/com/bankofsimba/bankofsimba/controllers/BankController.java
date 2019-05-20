@@ -1,6 +1,7 @@
 package com.bankofsimba.bankofsimba.controllers;
 
 import com.bankofsimba.bankofsimba.models.BankAccount;
+import com.bankofsimba.bankofsimba.models.FillingMultipleAccounts;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ public class BankController {
 
     private BankAccount bankAccount = new BankAccount("Simba", 2000, "lion");
     private String myText = "This is an <em>HTML</em> text. <b>Enjoy yourself!</b>";
+    private FillingMultipleAccounts bankAccountList = new FillingMultipleAccounts();
 
     // A GET method should be used to retrieve data from the server.
     // A POST method should be used when you need to create, update or delete data on the server side.
@@ -26,5 +28,11 @@ public class BankController {
     public String htmlException (Model model) {
         model.addAttribute("myText", myText);
         return "htmlexception";
+    }
+
+    @RequestMapping(path = "/show-list", method = RequestMethod.GET)
+    public String showListOfBankAccounts (Model model) {
+        model.addAttribute("accountList", bankAccountList);
+        return "accountslist";
     }
 }

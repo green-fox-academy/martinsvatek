@@ -15,10 +15,10 @@
             <th>Balance</th>
             <th>Animal Type</th>
         </tr>
-        <tr th:object="${account}">
-            <td th:text="*{name}"></td>
-            <td th:text="*{balance}"></td>
-            <td th:text="*{animalType}"></td>
+        <tr th:object="${account}"> // atribute name
+            <td th:text="*{name}"></td> // variable
+            <td th:text="*{balance}"></td> // variable
+            <td th:text="*{animalType}"></td> // variable
         </tr>
     </table>
 </body>

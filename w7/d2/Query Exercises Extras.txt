@@ -1,0 +1,20 @@
+1. Find the names of all reviewers who rated Gone with the Wind. 
+SELECT DISTINCT name
+FROM Movie
+INNER JOIN Rating USING(mId)
+INNER JOIN Reviewer USING(rId)
+WHERE title = "Gone with the Wind";
+
+2. For any rating where the reviewer is the same as the director of the movie, return the reviewer name, movie title, and number of stars. 
+SELECT name, title, stars
+FROM Movie
+INNER JOIN Rating USING(mId)
+INNER JOIN Reviewer USING(rId)
+WHERE director = name;
+
+
+3. Return all reviewer names and movie names together in a single list, alphabetized. (Sorting by the first name of the reviewer and first word in the title is fine; no need for special processing on last names or removing "The".) 
+SELECT title FROM Movie
+UNION
+SELECT name FROM Reviewer
+ORDER BY name, title;

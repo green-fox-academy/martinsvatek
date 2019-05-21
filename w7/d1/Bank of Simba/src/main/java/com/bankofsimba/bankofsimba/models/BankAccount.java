@@ -10,10 +10,17 @@ public class BankAccount {
     DecimalFormat decimalFormat = new DecimalFormat("#.00");
     private String balanceString;
 
-    public BankAccount(String name, double balance, String animalType) {
+    private boolean isKing;
+
+    public BankAccount(String name, double balance, String animalType) { // basic constructor
         this.name = name;
         this.balanceString = decimalFormat.format(balance);
         this.animalType = animalType;
+    }
+
+    public BankAccount(String name, double balance, String animalType, boolean isKing) { // + king
+        this(name, balance, animalType);
+        this.isKing = isKing;
     }
 
     public String getName() {
@@ -26,5 +33,9 @@ public class BankAccount {
 
     public String getBalanceString() {
         return balanceString;
+    }
+
+    public boolean isKing() {
+        return isKing;
     }
 }

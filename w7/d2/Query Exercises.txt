@@ -1,0 +1,46 @@
+https://lagunita.stanford.edu/courses/DB/SQL/SelfPaced/courseware/ch-sql/seq-exercise-sql_movie_query_core/
+
+Movie ( mID, title, year, director ) 
+English: There is a movie with ID number mID, a title, a release year, and a director. 
+
+Reviewer ( rID, name ) 
+English: The reviewer with ID number rID has a certain name. 
+
+Rating ( rID, mID, stars, ratingDate ) 
+English: The reviewer rID gave the movie mID a number of stars rating (1-5) on a certain ratingDate. 
+
+--- --- --- --- ---
+
+Find the titles of all movies directed by Steven Spielberg.
+SELECT title FROM movie WHERE director = "Steven Spielberg";
+
+---
+
+Find all years that have a movie that received a rating of 4 or 5, and sort them in increasing order. 
+SELECT DISTINCT year FROM movie JOIN rating ON movie.mID = rating.mID WHERE stars >= 4 ORDER BY year;
+// DISTINCT = no duplicates, JOIN..ON.. = connection, ORDER BY = default is ASC
+
+---
+
+Find the titles of all movies that have no ratings. 
+SELECT title FROM movie WHERE mId NOT IN (SELECT mID FROM rating);
+// https://stackoverflow.com/questions/11767565/mysql-select-rows-from-a-table-that-are-not-in-another/11767663
+
+---
+
+Some reviewers didn't provide a date with their rating. Find the names of all reviewers who have ratings with a NULL value for the date. 
+SELECT name FROM reviewer JOIN rating ON reviewer.rID = rating.rID WHERE ratingdate IS NULL;
+
+---
+
+Write a query to return the ratings data in a more readable format: reviewer name, movie title, stars, and ratingDate. Also, sort the data, first by reviewer name, then by movie title, and lastly by number of stars. 
+SELECT reviewer.name, movie.title, rating.stars, rating.ratingdate
+FROM rating
+LEFT JOIN movie ON rating.mID = movie.mID // connection from left
+LEFT JOIN reviewer ON rating.rID = reviewer.rID // connection from left
+ORDER BY reviewer.name, movie.title, rating.stars; // sorting
+
+---
+
+For all cases where the same reviewer rated the same movie twice and gave it a higher rating the second time, return the reviewer's name and the title of the movie. 
+

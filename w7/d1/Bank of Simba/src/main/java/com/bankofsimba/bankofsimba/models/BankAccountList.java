@@ -29,11 +29,11 @@ public class BankAccountList {
     public List<BankAccount> initializeList() {
         this.bankAccountList = new ArrayList<>();
 
-        BankAccount simba = new BankAccount("Simba", 2000, "Lion");
-        BankAccount scar = new BankAccount("Scar", 4500, "Lion");
-        BankAccount pumbaa = new BankAccount("Pumbaa", 1200, "Wild Pig");
-        BankAccount timon = new BankAccount("Timon", 800, "Surikata");
-        BankAccount shenzi = new BankAccount("Shenzi", 310, "Hyena");
+        BankAccount simba = new BankAccount("Simba", 2000, "Lion", true);
+        BankAccount scar = new BankAccount("Scar", 4500, "Lion", true);
+        BankAccount pumbaa = new BankAccount("Pumbaa", 1200, "Wild Pig", false);
+        BankAccount timon = new BankAccount("Timon", 800, "Surikata", false);
+        BankAccount shenzi = new BankAccount("Shenzi", 310, "Hyena", false);
 
         bankAccountList.add(simba);
         bankAccountList.add(scar);

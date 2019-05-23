@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | FOX CLUB</title>
+    <link href="/static/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<main>
+    <img th:src="fox.png" th:alt="Picture of green fox">
+
+    <img src="fox.png" height="386" width="433"/>
+    <h1>Welcome to programmer fox club!</h1>
+        <p>Please provide a name, so you can associate it to your pet.</p>
+    <form action="save" method="post">
+        <table>
+            <tr>
+                <td><label for="user-name">User Name</label></td>
+                <td><input type="text" name="name"></input></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"></input></td>
+            </tr>
+        </table>
+    </form>
+</main>
+</body>
+</html>

@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-
-<html xmlns:th="http://www.thymeleaf.org">
-
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank of Simba</title>
-    <link rel="stylesheet" th:href="@{/style.css}" />
-    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" th:href="'/style.css'">
 </head>
-
 <body>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Balance</th>
-            <th>Animal Type</th>
-        </tr>
-            <td th:text="${account.getName()}"></td> <!--atribute name + variable-->
-            <td th:text="${account.getBalanceString()}"></td> <!--atribute name + variable-->
-            <td th:text="${account.getAnimalType()}"></td> <!--atribute name + variable-->
-        </tr>
-    </table>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a th:href="'users'">Users</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div th:class="container__header">
+        <div th:class="layer">
+            <h1>Welcome to the Bank of Simba</h1>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
 </body>
 </html>

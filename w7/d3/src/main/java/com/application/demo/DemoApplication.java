@@ -1,7 +1,7 @@
 package com.application.demo;
 
-import com.application.demo.Models.MyColor;
-import com.application.demo.Services.Printer;
+import com.application.demo.colors.MyColor;
+import com.application.demo.printers.Printer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;

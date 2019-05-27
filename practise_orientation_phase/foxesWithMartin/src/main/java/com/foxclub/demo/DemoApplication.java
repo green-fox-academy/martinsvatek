@@ -1,13 +1,12 @@
-package com.tamagotchi.foxclub;
+package com.foxclub.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FoxClubApplication {
+public class DemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FoxclubApplication.class, args);
+        SpringApplication.run(DemoApplication.class, args);
     }
-
 }

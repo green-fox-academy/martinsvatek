@@ -1,7 +1,7 @@
 package com.bankofsimba.bankofsimba.controllers;
 
-import com.bankofsimba.bankofsimba.Account;
-import com.bankofsimba.bankofsimba.Users;
+import com.bankofsimba.bankofsimba.models.Account;
+import com.bankofsimba.bankofsimba.models.Users;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;

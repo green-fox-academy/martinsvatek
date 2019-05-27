@@ -1,4 +1,4 @@
-package com.bankofsimba.bankofsimba;
+package com.bankofsimba.bankofsimba.models;
 
 import java.util.ArrayList;
 import java.util.List;

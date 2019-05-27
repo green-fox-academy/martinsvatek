@@ -1,0 +1,50 @@
+body {
+    background-color: lightgrey;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    font-weight: 900;
+    font-family: Montserrat, "Open Sans";
+}
+
+.wolf {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+}
+
+.left-form {
+    display: block;
+    float: left;
+    width: 40%;
+    background-color: black;
+    color: white;
+    padding: 5% 5% 5% 5%;
+    font-weight: 100;
+    font-family: Montserrat, "Open Sans";
+    text-align: center;
+}
+
+.right-form {
+    display: block;
+    float: right;
+    width: 40%;
+    background-color: black;
+    color: white;
+    padding: 5% 5% 5% 5%;
+    font-weight: 100;
+    font-family: Montserrat, "Open Sans";
+    text-align: center;
+}
+
+.button {
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: initial;
+    border: none;
+}

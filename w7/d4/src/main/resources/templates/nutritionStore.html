@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Green Fox Club | Nutrition Store</title>
+    <link href="/static/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div th:include="header :: copy (${fox}, ${page})"></div>
+
+<main>
+    <form th:method="post" th:action="'/nutritionStore/' + ${fox.getName()}">
+        <div class="form__row">
+            <label for="foodSelection" th:text="'Food'" th:style="'display : none'"></label>
+            <select id="foodSelection" name="food">
+                <option th:text="'Select food'" disabled selected hidden="hidden"></option>
+                <option th:each="foodie: ${food}" th:text="${foodie.getFood()}"></option>
+            </select>
+        </div>
+        <div class="form__row">
+            <label for="drinkSelection" th:text="'Drink'" th:style="'display : none'"></label>
+            <select id="drinkSelection" name="drink">
+                <option th:text="'Select drink'" disabled selected hidden="hidden"></option>
+                <option th:each="drink: ${drinks}" th:text="${drink.getDrink()}"></option>
+            </select>
+        </div>
+        <button class="btn" type="submit" th:text="'Feed'"></button>
+    </form>
+</main>
+<script type="text/javascript" src="/static/js/main.js"></script>
+</body>
+</html>

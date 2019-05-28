@@ -1,0 +1,5 @@
+Honza,Burger,Water,[Java,              CSS,              HTML,              JavaScript, ],true
+Pepa,Sandwich,Lemonade,[],false
+Karel,Sandwich,Lemonade,[HTML]]]],false
+Frante,Sandwich,Coffee,[HTML, ],false
+Peter,Sandwich,Lemonade,[],false

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Green Fox Club | Login</title>
+    <link href="/static/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div th:include="header :: copy (${fox}, ${page})"></div>
+<main>
+    <div class="table" >
+        <div class="table__row" th:each="foxie : ${foxes}">
+            <p th:text="${foxie.name}"></p>
+            <a class="btn__delete" th:href="${foxie.equals(fox)}? '' : '/adminPanel/' + ${fox.name} +'/'+ ${foxie.name}"
+               th:text="${foxie.equals(fox)}? '' : 'delete'"></a>
+            <a class="btn__update" th:href="${foxie.equals(fox)}? '' : '/adminPanel/' + ${fox.name} +'/update/'+ ${foxie.name}"
+               th:text="${foxie.equals(fox)}? '' : 'update'"></a>
+        </div>
+    </div>
+</main>
+<script type="text/javascript" src="/static/js/main.js"></script>
+</body>
+</html>

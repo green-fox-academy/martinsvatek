@@ -1,48 +1,24 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="utf-8" />
-    <meta name="keywords" content="fox, club" />
-    <meta name="description" content="" />
-    <link href="styles.css" type="text/css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Green Fox Club | Login</title>
+    <link href="/static/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>login | WOLF CLUB</title>
 </head>
+<body th:style="'background : #3CB879'">
+<main>
+    <img th:src="'/static/images/greenfox.png'" th:alt="'Picture of green fox'" class="login__logo">
 
-<body>
-    <div id="h1">
-        <h1>Welcome to Black Wolf Club!</h1>
-    </div>
-    <img class="wolf" src="fox.svg" />
-    <div class="left-form">
-        <form action="save" method="post">
-            <h2>Find your Wolf!</h2>
-            <tr>
-                <td><label for="user-name">Login Name</label></td><br><br>
-                <td><input type="text" name="name"></input></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input class="button" type="submit" value="Submit"></input></td>
-            </tr>
+    <div th:class="'container__login'">
+        <h1 th:text="'GREEN FOX CLUB'"></h1>
+        <form th:method="post" th:action="'/login'">
+            <label for="name" th:text="'Name: '"></label>
+            <input type="text" id="name" name="porky" th:placeholder="'Name'">
+            <button class="btn" type="submit" th:text="'login'"></button>
         </form>
     </div>
-    <div class="right-form">
-        <form action="save" method="post">
-            <h2>Create your Wolf:</h2>
-            <tr>
-                <td><label for="registration-name">Registration Name</label></td><br><br>
-                <td><input type="text" name="name"></input></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input class="button" type="submit" value="Submit"></input></td>
-            </tr>
-        </form>
-    </div>
+</main>
 </body>
-
 </html>

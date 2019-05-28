@@ -8,7 +8,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DatabaseApplication implements CommandLineRunner { // implement commandlinerunner
+public class DatabaseApplication { // implements CommandLineRunner { // implement commandlinerunner
 
     // Inject the new repository
 
@@ -23,11 +23,11 @@ public class DatabaseApplication implements CommandLineRunner { // implement com
         SpringApplication.run(DatabaseApplication.class, args);
     }
 
-    @Override
+/*  @Override // commented after finished 2nd task
     public void run(String... args) throws Exception { // create run method
         toDoRepo.save(new ToDo("Clean your room!"));
-        toDoRepo.save(new ToDo("Do homework"));
+        toDoRepo.save(new ToDo("Do homework!"));
 
         System.out.println(toDoRepo.count());
-    }
+    }*/
 }

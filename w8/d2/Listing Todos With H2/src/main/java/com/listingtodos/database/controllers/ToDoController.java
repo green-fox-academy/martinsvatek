@@ -1,5 +1,6 @@
 package com.listingtodos.database.controllers;
 
+import com.listingtodos.database.models.ToDo;
 import com.listingtodos.database.repositories.ToDoRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,9 +19,16 @@ public class ToDoController {
 
     private ToDoRepo toDoRepo;
 
+/*  @Autowired // connected with Repository, commented after second exercise
+    public ToDoController(ToDoRepo toDoRepo) {
+        this.toDoRepo = toDoRepo;
+    }*/
+
     @Autowired // connected with Repository
     public ToDoController(ToDoRepo toDoRepo) {
         this.toDoRepo = toDoRepo;
+        toDoRepo.save(new ToDo("Clean your room!", true, false));
+        toDoRepo.save(new ToDo("Do homework!", false, false));
     }
 
     // Add a public String list() method which maps to / and /list in the controller, which returns with

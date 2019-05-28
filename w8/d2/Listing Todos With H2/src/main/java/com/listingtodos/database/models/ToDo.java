@@ -19,11 +19,16 @@ public class ToDo {
     private boolean urgent;
     private boolean done;
 
+    public ToDo() { // because of spring or inheritance
+    }
+
     public ToDo(String title) {
         this.title = title;
         this.urgent = false;
         this.done = false;
     }
+
+
 
     public long getId() {
         return id;

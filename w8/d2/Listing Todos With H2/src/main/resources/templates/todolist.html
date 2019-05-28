@@ -13,7 +13,9 @@
         </thead>
 
         <tbody>
-
+            <tr th:each="todo : ${todos}">
+                <td th:text="${todo.getTitle()}"></td>
+            </tr>
         </tbody>
     </table>
 

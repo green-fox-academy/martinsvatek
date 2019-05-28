@@ -50,11 +50,12 @@ public class ToDoController {
 
     @GetMapping(value = {"/","/list"})
     public String list(Model model, @RequestParam(value = "isDone", defaultValue = "false") boolean done) {
-        if (done) {
-            model.addAttribute("todos", toDoRepo.fi());
-        } else
 
-        model.addAttribute("todos", toDoRepo.findAll()); // when you ise "todos" in html, it gives you all from repo
+        if (done) {
+            model.addAttribute("todos", toDoRepo.findDone());
+        } else {
+            model.addAttribute("todos", toDoRepo.findAll()); // when you ise "todos" in html, it gives you all from repo
+        }
         return "todolist";
     }
 }

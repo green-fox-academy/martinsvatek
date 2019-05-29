@@ -8,8 +8,11 @@
 <body>
     <h1>Add new ToDo:</h1>
     <form th:method="post">
-        <label th:for="'newToDo'" >Name of ToDo:</label>
-        <input th:id="'newTodo'" type="text" name="todo">
+        <label th:for="'titleToDo'" >Name of ToDo:</label>
+        <input th:id="'titleTodo'" type="text" name="todo"><br>
+        <label th:for="'urgentToDo'" >Is that urgent?</label><br>
+        <input th:id="'urgentTodo'" type="radio" name="urgent" value="true">true<br>
+        <input th:id="'urgentTodo'" type="radio" name="urgent" value="false">false<br>
         <button type="submit" th:text="'Submit'"></button>
     </form>
 

@@ -30,8 +30,8 @@ public class ToDoController {
     }
 
     @PostMapping("/addtodo")
-    public String addNewToDo(@RequestParam(name = "todo") String newTodo) {
-        toDoRepo.save(new ToDo(newTodo));
+    public String addNewToDo(@RequestParam(name = "todo") String newTodo, @RequestParam(name = "urgent") boolean urgent) {
+        toDoRepo.save(new ToDo(newTodo, urgent));
         return "redirect:/todo/list";
     }
 

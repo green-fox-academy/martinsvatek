@@ -35,6 +35,11 @@ public class ToDo {
         this.done = done;
     }
 
+    public ToDo(String title, boolean urgent) {
+        this.title = title;
+        this.urgent = urgent;
+    }
+
     public long getId() {
         return id;
     }

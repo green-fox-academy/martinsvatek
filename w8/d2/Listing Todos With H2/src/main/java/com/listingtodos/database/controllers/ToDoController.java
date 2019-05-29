@@ -30,7 +30,7 @@ public class ToDoController {
     }
 
     @PostMapping("/addtodo")
-    public String addNewToDo(@RequestParam(name = "todo") String newTodo, @RequestParam(name = "urgent") boolean urgent) {
+    public String addNewToDo(@RequestParam(name = "todo") String newTodo, @RequestParam(name = "isUrgent") boolean urgent) {
         toDoRepo.save(new ToDo(newTodo, urgent));
         return "redirect:/todo/list";
     }
@@ -39,4 +39,18 @@ public class ToDoController {
     public String addNewToDo() {
         return "addtodo";
     }
+
+    @GetMapping("/{id}/delete")
+    public String deleteToDo(@PathVariable(name = "id") long id) {
+        toDoRepo.deleteById(id);
+        return "redirect:/todo/list";
+    }
+
+    @GetMapping("/{id}/update")
+    public String updateToDo(@PathVariable(name = "id") long id, Model model) {
+        model.addAttribute("todoTitle", toDoRepo.findById(id).get().getTitle());
+        model.addAttribute("todo", toDoRepo.findById(id));
+        return "update";
+    }
+
 }

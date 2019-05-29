@@ -11,10 +11,12 @@
         <label th:for="'titleToDo'" >Name of ToDo:</label>
         <input th:id="'titleTodo'" type="text" name="todo"><br>
         <label th:for="'urgentToDo'" >Is that urgent?</label><br>
-        <input th:id="'urgentTodo'" type="radio" name="urgent" value="true">true<br>
-        <input th:id="'urgentTodo'" type="radio" name="urgent" value="false">false<br>
+        <input th:id="'urgentTodo'" type="radio" name="isUrgent" value="true">true<br>
+        <input th:id="'urgentTodo'" type="radio" name="isUrgent" value="false">false<br>
         <button type="submit" th:text="'Submit'"></button>
     </form>
+    <hr>
+    <a th:href="'/todo/list'" th:text="'Back'"></a>
 
 </body>
 </html>

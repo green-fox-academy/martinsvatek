@@ -18,5 +18,5 @@ public interface ToDoRepo extends CrudRepository<ToDo,Long> { // ToDo is our mod
     @Query(value = "SELECT * FROM to_do WHERE done = true",
             nativeQuery=true
     )
-    public List<ToDo> findDone();
+    List<ToDo> findDone();
 }

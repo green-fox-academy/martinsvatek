@@ -19,10 +19,10 @@ public class ToDoController {
     }
 
     @GetMapping(value = {"/","/list"}) // define what will show us this url address
-    public String listOfToDos(Model model, @RequestParam(value = "isDone", defaultValue = "false") boolean done) {
+    public String listOfToDos(Model model, @RequestParam(value = "done", defaultValue = "false") boolean done) { // ?done=true // or false
 
         if (done) {
-            model.addAttribute("todos", toDoRepo.findDone());
+            model.addAttribute("todos", toDoRepo.findDone()); // model.addAttribute is connection with html
         } else {
             model.addAttribute("todos", toDoRepo.findAll()); // when you use "todos" in html, it gives you all from repo
         }
@@ -50,7 +50,13 @@ public class ToDoController {
     public String updateToDo(@PathVariable(name = "id") long id, Model model) {
         model.addAttribute("todoTitle", toDoRepo.findById(id).get().getTitle());
         model.addAttribute("todo", toDoRepo.findById(id));
-        return "update";
+        return "updatetodo";
+    }
+
+    @PostMapping("/{id}/update")
+    public String updateToDo(ToDo updatedTodo) {
+        toDoRepo.save(updatedTodo);
+        return "redirect:/todo/list";
     }
 
 }

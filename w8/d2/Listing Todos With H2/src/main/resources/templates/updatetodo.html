@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update ToDo | TODO APP</title>
+    <!-- <link th:rel="'stylesheet'" th:type="'text/css'" th:href="'/style.css'"> -->
+    <link th:rel="'stylesheet'" th:href="'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'" th:integrity="'sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T'" th:crossorigin="'anonymous'">
+</head>
+<body>
+<h1>Add new ToDo:</h1>
+<p th:text="'Updating: ' + ${todoTitle}"></p> <!–– $ name in object -->
+<form th:method="post" th:object="${todo}">
+    <label th:for="'updateTodoText'">New title:</label>
+    <input th:id="'updateTodoText'" th:field="*{title}" th:type="text"> <!–– * name in object -->
+
+    <label th:for="'checkDone'">Done</label>
+    <input th:id="'checkDone'" th:field="*{done}" th:type="checkbox">
+
+    <label th:for="'checkUrgent'">Urgent</label>
+    <input th:id="'checkUrgent'" th:field="*{urgent}" th:type="checkbox"><br>
+
+    <button th:type="'submit'">Submit</button>
+</form>
+<hr>
+<a th:href="'/todo/list'" th:text="'Back'"></a>
+
+</body>
+</html>

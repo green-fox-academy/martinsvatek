@@ -12,12 +12,12 @@ public class DatabaseApplication { // implements CommandLineRunner { // implemen
 
     // Inject the new repository
 
-    private ToDoRepo toDoRepo;
+/*    private ToDoRepo toDoRepo;
 
     @Autowired // connected with Repository
     public DatabaseApplication(ToDoRepo toDoRepo) {
         this.toDoRepo = toDoRepo;
-    }
+    }*/
 
     public static void main(String[] args) {
         SpringApplication.run(DatabaseApplication.class, args);

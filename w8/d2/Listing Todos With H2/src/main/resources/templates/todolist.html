@@ -2,11 +2,11 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>ToDo app</title>
+    <title>List of ToDos | TODO APP</title>
     <link th:rel="'stylesheet'" th:type="'text/css'" th:href="'/style.css'">
 </head>
 <body>
-    <h1>Todos for today:</h1>
+    <h1>ToDos for today:</h1>
     <table>
         <thead>
             <tr>
@@ -26,6 +26,7 @@
             </tr>
         </tbody>
     </table>
+    <a th:href="'/todo/addtodo'" th:text="'Add new todo'"></a>
 
 </body>
 </html>

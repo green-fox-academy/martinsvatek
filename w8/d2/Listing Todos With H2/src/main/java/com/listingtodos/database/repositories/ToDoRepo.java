@@ -19,5 +19,4 @@ public interface ToDoRepo extends CrudRepository<ToDo,Long> { // ToDo is our mod
             nativeQuery=true
     )
     public List<ToDo> findDone();
-
 }

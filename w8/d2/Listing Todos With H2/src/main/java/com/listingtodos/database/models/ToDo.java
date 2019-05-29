@@ -3,13 +3,14 @@ package com.listingtodos.database.models;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 // Add a Todo class with the fields:
 // id: long, title: String, urgent: boolean(default false), done: boolean(default false))
 
 //
 
-@Entity // create database from this class
+@Entity // create table from this class
 public class ToDo {
 
     @Id // key value

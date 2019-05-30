@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Add new ToDo | TODO APP</title>
-    <!-- <link th:rel="'stylesheet'" th:type="'text/css'" th:href="'/style.css'"> -->
-    <link th:rel="'stylesheet'" th:href="'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'" th:integrity="'sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T'" th:crossorigin="'anonymous'">
+    <link th:rel="'stylesheet'" th:type="'text/css'" th:href="'/styles.css'">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Add new ToDo:</h1>
-    <form th:method="post">
-        <label th:for="'titleToDo'" >Name of ToDo:</label>
-        <input th:id="'titleTodo'" type="text" name="todo"><br>
+    <div class="todo">
+        <a class="button-grey" th:href="'/todo/list'" th:text="'Back'"></a><br><br>
+        <form th:method="post">
+            <label class="field" th:for="'titleToDo'" >Name of ToDo:</label>
+            <input class="text-type" th:id="'titleTodo'" type="text" name="todo">
+            <br><br>
+            <label class="field" th:for="'urgentToDo'" >Is that urgent?</label><br>
+            <input class="field" th:id="'urgentTodo'" th:type="'radio'" th:name="'isUrgent'" th:value="'true'">true<br>
+            <input class="field" th:id="'urgentTodo'" th:type="'radio'" th:name="'isUrgent'" th:value="'false'">false<br><br>
 
-        <label th:for="'urgentToDo'" >Is that urgent?</label><br>
-        <input th:id="'urgentTodo'" th:type="'radio'" th:name="'isUrgent'" th:value="'true'">true<br>
-        <input th:id="'urgentTodo'" th:type="'radio'" th:name="'isUrgent'" th:value="'false'">false<br>
-
-        <button type="'submit'" th:text="'Submit'"></button>
-    </form>
-    <hr>
-    <a th:href="'/todo/list'" th:text="'Back'"></a>
-
+            <button class="button-green" type="'submit'" th:text="'Submit'"></button>
+        </form>
+    </div>
 </body>
 </html>

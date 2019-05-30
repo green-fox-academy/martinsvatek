@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Update ToDo | TODO APP</title>
-    <!-- <link th:rel="'stylesheet'" th:type="'text/css'" th:href="'/style.css'"> -->
-    <link th:rel="'stylesheet'" th:href="'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'" th:integrity="'sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T'" th:crossorigin="'anonymous'">
+    <link th:rel="'stylesheet'" th:type="'text/css'" th:href="'/styles.css'">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>Add new ToDo:</h1>
-<p th:text="'Updating: ' + ${todoTitle}"></p> <!–– $ name in object -->
-<form th:method="post" th:object="${todo}">
-    <label th:for="'updateTodoText'">New title:</label>
-    <input th:id="'updateTodoText'" th:field="*{title}" th:type="text"> <!–– * name in object -->
+    <h1>Edit your ToDo:</h1>
+    <div class="todo">
+        <a class="button-grey" th:href="'/todo/list'" th:text="'Back'"></a><br><br>
+        <p class="field">Updating:</p>
+        <p class="span" th:text="${todoTitle}"></p> <!–– $ name in object -->
+        <br>
+        <form th:method="post" th:object="${todo}">
+            <label class="field" th:for="'updateTodoText'">New title:</label>
+            <input class="text-type" th:id="'updateTodoText'" th:field="*{title}" th:type="text"> <!–– * name in object -->
+            <br><br>
+            <label class="field" th:for="'checkDone'">Done</label>
+            <input class="field" th:id="'checkDone'" th:field="*{done}" th:type="checkbox">
+            <br>
+            <label class="field" th:for="'checkUrgent'">Urgent</label>
+            <input class="field" th:id="'checkUrgent'" th:field="*{urgent}" th:type="checkbox"><br><br>
 
-    <label th:for="'checkDone'">Done</label>
-    <input th:id="'checkDone'" th:field="*{done}" th:type="checkbox">
-
-    <label th:for="'checkUrgent'">Urgent</label>
-    <input th:id="'checkUrgent'" th:field="*{urgent}" th:type="checkbox"><br>
-
-    <button th:type="'submit'">Submit</button>
-</form>
-<hr>
-<a th:href="'/todo/list'" th:text="'Back'"></a>
-
+            <button class="button-green" th:type="'submit'">Submit</button>
+        </form>
+    </div>
 </body>
 </html>

@@ -8,7 +8,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DatabaseApplication { // implements CommandLineRunner { // implement commandlinerunner
+public class DatabaseApplication { // implements CommandLineRunner { // implement commandlinerunner - dont need controller
 
     // Inject the new repository
 

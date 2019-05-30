@@ -1,0 +1,128 @@
+body {
+    height: 100vh;
+    background-color: #e3ecec;
+    font-size: 18px;
+    padding: 20px 4%;
+    font-family: 'Open Sans', sans-serif;
+    color: #212121;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #a2d5ac;
+    box-shadow: 0px 0px 10px lightgrey;
+    margin: 10px 0px;
+}
+
+.span {
+    padding: 0px 10px;
+    font-weight: 800;
+    color: #3aafa9;
+    font-size: 30px;
+}
+
+.todo {
+    background-color: white;
+    box-shadow: 0px 0px 10px lightgrey;
+    padding: 80px 4%;
+    border-radius: 10px;
+}
+
+.table {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.field-head {
+    padding: 20px 10px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.field-body {
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.button-green {
+    text-decoration: none;
+    align-content: center;
+    background-color: #3aafa9;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    border:none;
+    box-shadow: 0px 0px 10px lightgrey;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.button-grey {
+     text-decoration: none;
+     align-content: center;
+     background-color: lightgrey;
+     border-radius: 10px;
+     padding: 10px 20px 10px 20px;
+     color: white;
+     font-size: 20px;
+     font-weight: 300;
+     text-transform: uppercase;
+}
+
+.button-delete {
+     text-decoration: none;
+     align-content: center;
+     margin: 50px 10px 50px 10px;
+     color: #ff3a45;
+     padding: 10px 10px;
+     font-size: 18px;
+     font-weight: 400;
+}
+
+.button-update {
+    text-decoration: none;
+    align-content: center;
+    margin: 50px 10px 50px 10px;
+    color:  #3aafa9;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.text-type {
+    -webkit-appearance: none;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    border:none;
+    box-shadow: 0px 0px 10px lightgrey;
+}
+
+.text-type:hover{
+    box-shadow: 0px 0px 10px #3aafa9;
+}
+
+.text-type:focus{
+    -webkit-appearance: none;
+    box-shadow: 0px 0px 10px #3aafa9;
+    border: 1px solid #3aafa9;
+}
+
+.field {
+    padding: 0px 10px;
+    font-size: 18px;
+    font-weight: 300;
+}

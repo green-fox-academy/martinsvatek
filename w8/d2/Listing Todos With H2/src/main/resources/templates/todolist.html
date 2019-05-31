@@ -12,8 +12,8 @@
     <div class="todo">
         <form method="post" action="/todo/search">
             <label class="field" th:for="'titleToDo'" >Search:</label>
-            <input name="search" type="text" placeholder="Searched word" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <input type="submit" value="SEARCH">
+            <input class="text-type" name="search" type="text" aria-label="Recipient's username" aria-describedby="button-addon2"><br><br>
+            <input class="button-green" type="submit" value="SEARCH"><br><br>
         </form>
         <table class="table">
             <thead>
@@ -35,7 +35,7 @@
                     <td class="field-body" th:if="${todo.isUrgent() == false}">✗</td>
 
                     <td><a class="button-delete" th:href="'/todo/' + ${todo.getId()} + '/delete'" th:text="'Delete'"></a></td>
-                    <td><a class="button-update"th:href="'/todo/' + ${todo.getId()} + '/update'" th:text="'Update'"></a></td>
+                    <td><a class="button-update" th:href="'/todo/' + ${todo.getId()} + '/update'" th:text="'Update'"></a></td>
                 </tr>
             </tbody>
         </table><br><br>

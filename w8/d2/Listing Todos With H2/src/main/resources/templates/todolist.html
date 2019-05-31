@@ -10,6 +10,11 @@
     <h1>ToDos for today:</h1>
     <div style="overflow-x:auto;">
     <div class="todo">
+        <form method="post" action="/todo/search">
+            <label class="field" th:for="'titleToDo'" >Search:</label>
+            <input name="search" type="text" placeholder="Searched word" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <input type="submit" value="SEARCH">
+        </form>
         <table class="table">
             <thead>
                 <tr class="row-main">

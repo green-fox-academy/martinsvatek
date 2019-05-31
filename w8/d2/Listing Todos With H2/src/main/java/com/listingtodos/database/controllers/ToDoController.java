@@ -22,7 +22,7 @@ public class ToDoController {
     public String listOfToDos(Model model, @RequestParam(value = "done", defaultValue = "false") boolean done) { // ?done=true // or false
 
         if (done) {
-            model.addAttribute("todos", toDoRepo.findDone()); // model.addAttribute is connection with html
+            model.addAttribute("todos", toDoRepo.findAllByDone(true)); // model.addAttribute is connection with html
         } else {
             model.addAttribute("todos", toDoRepo.findAll()); // when you use "todos" in html, it gives you all from repo
         }
@@ -40,9 +40,9 @@ public class ToDoController {
         return "addtodo";
     }
 
-    @GetMapping("/{id}/delete")
-    public String deleteToDo(@PathVariable(name = "id") long id) {
-        toDoRepo.deleteById(id);
+    @PostMapping("/{id}/update")
+    public String updateToDo(ToDo updatedTodo) {
+        toDoRepo.save(updatedTodo);
         return "redirect:/todo/list";
     }
 
@@ -53,10 +53,15 @@ public class ToDoController {
         return "updatetodo";
     }
 
-    @PostMapping("/{id}/update")
-    public String updateToDo(ToDo updatedTodo) {
-        toDoRepo.save(updatedTodo);
+    @GetMapping("/{id}/delete")
+    public String deleteToDo(@PathVariable(name = "id") long id) {
+        toDoRepo.deleteById(id);
         return "redirect:/todo/list";
     }
 
+    @PostMapping("/search")
+    public String displaySearch(Model model,@RequestParam String search) {
+        model.addAttribute("todos", toDoRepo.findAllByTitleLikeIgnoreCaseOrderById( "%" + search + "%"));
+        return "todolist";
+    }
 }

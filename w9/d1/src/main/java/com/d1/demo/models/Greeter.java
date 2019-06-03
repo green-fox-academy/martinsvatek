@@ -4,13 +4,11 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 
 public class Greeter {
 
-    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonInclude(JsonInclude.Include.NON_NULL) // not null values
     private String welcome_message;
 
-    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonInclude(JsonInclude.Include.NON_NULL) // not null values
     private String error;
-
-
 
     public Greeter(String name, String title) {
 

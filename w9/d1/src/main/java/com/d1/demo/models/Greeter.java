@@ -1,11 +1,13 @@
 package com.d1.demo.models;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Greeter {
 
     @JsonInclude(JsonInclude.Include.NON_NULL) // not null values
-    private String welcome_message;
+    @JsonProperty("welcome-message") // allows us to use different variable name
+    private String welcomeMessage;
 
     @JsonInclude(JsonInclude.Include.NON_NULL) // not null values
     private String error;
@@ -19,16 +21,16 @@ public class Greeter {
         } else if (title == null) {
             this.error = "Please provide a title!";
         } else {
-            this.welcome_message = "Oh, hi there " + name + ", my dear " + title + "!";
+            this.welcomeMessage = "Oh, hi there " + name + ", my dear " + title + "!";
         }
     }
 
-    public String getWelcome_message() {
-        return welcome_message;
+    public String getWelcomeMessage() {
+        return welcomeMessage;
     }
 
-    public void setWelcome_message(String welcome_message) {
-        this.welcome_message = welcome_message;
+    public void setWelcomeMessage(String welcomeMessage) {
+        this.welcomeMessage = welcomeMessage;
     }
 
     public String getError() {

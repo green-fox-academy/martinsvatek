@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Greeter {
 
     @JsonInclude(JsonInclude.Include.NON_NULL) // not null values
-    @JsonProperty("welcome-message") // allows us to use different variable name
+    @JsonProperty("welcome_message") // allows us to use different variable name
     private String welcomeMessage;
 
     @JsonInclude(JsonInclude.Include.NON_NULL) // not null values

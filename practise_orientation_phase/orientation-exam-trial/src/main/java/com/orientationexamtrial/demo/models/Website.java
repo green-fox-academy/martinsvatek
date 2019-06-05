@@ -6,13 +6,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.Random;
+
 
 @Entity
 public class Website {
 
     @Id // key value
-    @GeneratedValue(strategy = GenerationType.AUTO) // autoincrement
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // autoincrement
     private long id;
 
     private String url;
@@ -20,18 +20,7 @@ public class Website {
     private int hitCount;
 
     @JsonIgnore // invisible for json
-    private int secretCode;
-
-    Random random = new Random();
-
-    public Website() { // empty constructor
-    }
-
-    public Website(String url, String alias) {
-        this.url = url;
-        this.alias = alias;
-        this.secretCode = generateSecretCode();
-    }
+    private String secretCode;
 
     public long getId() {
         return id;
@@ -65,27 +54,11 @@ public class Website {
         this.hitCount = hitCount;
     }
 
-    public void increaseHitCount() { // increase hit count
-        this.hitCount += 1;
-    }
-
-    public int getSecretCode() {
+    public String getSecretCode() {
         return secretCode;
     }
 
-    public void setSecretCode(int secretCode) {
+    public void setSecretCode(String secretCode) {
         this.secretCode = secretCode;
-    }
-
-    public int generateSecretCode() {
-        return 1000 + random.nextInt(9000);
-    }
-
-    public Random getRandom() {
-        return random;
-    }
-
-    public void setRandom(Random random) {
-        this.random = random;
     }
 }

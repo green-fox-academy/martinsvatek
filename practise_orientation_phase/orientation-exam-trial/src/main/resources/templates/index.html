@@ -4,20 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <title>URL shortener</title>
+    <style>
+        label {
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+        }
+        span {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <p th:if="${error}" th:text="${error}"></p>
+<p class="error" th:if="${error}">Your alias is already in use!</p>
+<p th:if="${secretCode}">
+    Your URL is aliased to
+    <span th:text="${alias}"></span>
+    and your secret code is
+    <span th:text="${secretCode}"></span>.
+</p>
+<form action="/save-link" method="post">
+    <label for="url">URL</label>
+    <br />
+    <input type="text" id="url" name="url" th:value="${url}">
+    <br />
+    <label for="alias">Alias</label>
+    <br />
+    <input th:if="${error}" type="text" id="alias" name="alias" th:value="${alias}">
+    <input th:if="${!error}" type="text" id="alias" name="alias">
+    <br />
+    <button type="submit">Submit</button>
+</form>
 
-    <form method="post" th:action="'/save-link'"> <!–– same url with controller ––>
-        <label th:for="'url'" th:text="'URL'"></label>
-        <input th:id="'url'" th:type="'text'" th:name="'url'" th:value="${error}? ${website.url} ">
-
-        <label th:for="'alias'" th:text="'Alias'"></label>
-        <input th:id="'alias'" th:type="'text'" th:name="'alias'" th:value="${error}? ${website.alias} ">
-
-        <button th:id="'submitButton'" th:type="'submit'" th:text="'Submit'"></button>
-    </form>
-
-    <p th:if="${website}" th:text="${website.getUrl()} + ' URL is aliased to ' + ${website.getAlias()} + ' and your secret code is ' + ${website.getSecretCode()}+ '.'"></p>
 </body>
 </html>

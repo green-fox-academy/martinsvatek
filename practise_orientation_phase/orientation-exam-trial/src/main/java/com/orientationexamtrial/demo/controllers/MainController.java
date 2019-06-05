@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 public class MainController {
@@ -24,7 +25,7 @@ public class MainController {
 
     @PostMapping("/save-link")
     public String shortenURL(@RequestParam("url") String url,
-                             @RequestParam("alias") String alias, Model model) {
+                             @RequestParam("alias") String alias, Model model) { // redirect attributes are used for value in html
 
         Website website = websiteService.createShortURL(url, alias);
 
@@ -32,7 +33,7 @@ public class MainController {
             model.addAttribute("website", website);
             return "index";
         } else {
-            model.addAttribute("error", "Your alias is already in use!!!");
+            model.addAttribute("error", "Your alias is already in use!");
             return "index";
         }
     }

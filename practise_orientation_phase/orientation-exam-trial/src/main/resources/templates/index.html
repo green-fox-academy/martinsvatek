@@ -9,15 +9,15 @@
     <p th:if="${error}" th:text="${error}"></p>
 
     <form method="post" th:action="'/save-link'"> <!–– same url with controller ––>
-        <label th:for="'url'" th:text="'URL'"> </label>
-        <input th:id="'url'" th:type="'text'" th:name="'url'">
+        <label th:for="'url'" th:text="'URL'"></label>
+        <input th:id="'url'" th:type="'text'" th:name="'url'" th:value="${error}? ${website.url} ">
 
-        <label th:for="'alias'" th:text="'Alias'"> </label>
-        <input th:id="'alias'" th:type="'text'" th:name="'alias'">
+        <label th:for="'alias'" th:text="'Alias'"></label>
+        <input th:id="'alias'" th:type="'text'" th:name="'alias'" th:value="${error}? ${website.alias} ">
 
         <button th:id="'submitButton'" th:type="'submit'" th:text="'Submit'"></button>
     </form>
 
-    <p th:if="${website}" th:text="'Your URL is aliased to ' + ${website.getAlias()} + 'and your secret code is ' + ${website.getSecretCode()}+ '.'"></p>
+    <p th:if="${website}" th:text="${website.getUrl()} + ' URL is aliased to ' + ${website.getAlias()} + ' and your secret code is ' + ${website.getSecretCode()}+ '.'"></p>
 </body>
 </html>

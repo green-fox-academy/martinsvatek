@@ -22,7 +22,7 @@ public class Website {
     @JsonIgnore // invisible for json
     private int secretCode;
 
-    Random random;
+    Random random = new Random();
 
     public Website() { // empty constructor
     }
@@ -30,7 +30,6 @@ public class Website {
     public Website(String url, String alias) {
         this.url = url;
         this.alias = alias;
-        this.random = new Random();
         this.secretCode = generateSecretCode();
     }
 

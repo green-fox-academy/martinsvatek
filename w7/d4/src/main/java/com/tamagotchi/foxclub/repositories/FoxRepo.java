@@ -1,4 +1,4 @@
-package com.tamagotchi.foxclub.components.repositories;
+package com.tamagotchi.foxclub.repositories;
 
 import com.tamagotchi.foxclub.models.Fox;
 import org.springframework.data.repository.CrudRepository;

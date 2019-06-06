@@ -1,8 +1,7 @@
-package com.tamagotchi.foxclub.components.repositories;
+package com.tamagotchi.foxclub.repositories;
 
 import com.tamagotchi.foxclub.models.Fox;
 import com.tamagotchi.foxclub.models.Trick;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

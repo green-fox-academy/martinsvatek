@@ -1,6 +1,6 @@
-package com.tamagotchi.foxclub.components.controllers;
+package com.tamagotchi.foxclub.controllers;
 
-import com.tamagotchi.foxclub.components.repositories.*;
+import com.tamagotchi.foxclub.repositories.*;
 import com.tamagotchi.foxclub.models.Fox;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

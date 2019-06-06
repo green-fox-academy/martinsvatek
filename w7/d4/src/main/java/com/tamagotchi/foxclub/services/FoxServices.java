@@ -1,4 +1,4 @@
-package com.tamagotchi.foxclub.components.services;
+package com.tamagotchi.foxclub.services;
 
 import com.tamagotchi.foxclub.models.Fox;
 

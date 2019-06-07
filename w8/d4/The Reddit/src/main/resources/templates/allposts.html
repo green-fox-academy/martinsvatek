@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All posts | REDDIT</title>
+</head>
+
+<body>
+    <h1>All posts</h1>
+    <table>
+        <tr>
+            <th scope="col">Votes</th>
+            <th scope="col">+-</th>
+            <th scope="col">Title</th>
+            <th scope="col">URL</th>
+            <th scope="col">Description</th>
+        </tr>
+        <tr th:each="post:${posts}">
+            <td th:text="${post.getNumberOfVotes()}"></td>
+            <td><a th:href="'/' + ${post.getId()} + '/up'" th:text="'+'"></a>
+                <a th:href="'/' + ${post.getId()} + '/down'" th:text="'-'"></a>
+            </td>
+            <td th:text="${post.getTitle()}"></td>
+            <td th:text="${post.getUrl()}"></td>
+            <td th:text="${post.getDescription()}"></td>
+        </tr>
+    </table>
+    <br><br>
+    <a href="/">Add new post</a>
+</body>
+</html>
